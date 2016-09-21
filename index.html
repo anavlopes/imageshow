@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+    <form method="POST">
+      <input type="text">
+      <img src="" alt="">
+      <button>view</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+      $('form').on('click', function(e){
+        var inputValue = $('input').val();
+        e.preventDefault();
+        $('img').attr('src', inputValue);
+      });
+      $('form').on('click', function(e){
+        var inputValue = $('input').val();
+        e.preventDefault();
+        $('image').attr('src', inputValue);
+      });
+    </script>
+  </body>
+</html>
